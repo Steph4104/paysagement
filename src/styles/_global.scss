@@ -1,0 +1,96 @@
+@import 'breakpoints';
+
+/* Typography */
+
+@font-face {
+  font-family: 'LouisGeorgeCafe';
+  font-style: normal;
+  font-weight: 300;
+	src: local('LouisGeorgeCafe Light'), local('LouisGeorgeCafe-Light'),
+	url('../libs/fonts/LouisGeorgeCafeLight.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'LouisGeorgeCafe';
+  font-style: normal;
+  font-weight: 400;
+	src: local('LouisGeorgeCafe'), local('LouisGeorgeCafe-Regular'),
+	url('../libs/fonts/LouisGeorgeCafe.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'LouisGeorgeCafe';
+  font-style: normal;
+  font-weight: 900;
+	src: local('LouisGeorgeCafe Bold'), local('LouisGeorgeCafe-Bold'),
+	url('../libs/fonts/LouisGeorgeCafeBold.ttf') format('ttf');
+}
+
+/* reem-kufi-regular - latin */
+@font-face {
+  font-family: 'Gravity';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gravity Bold'), local('Gravity-Bold'),
+       url('../libs/fonts/Gravity-Bold.otf') format('otf')
+     
+}
+
+html {
+	font-size: 12px;
+
+	@include breakpoint-small-up {
+    font-size: 14px;
+  }
+
+  @include breakpoint-medium-up {
+    font-size: 16px;
+  }
+
+  @include breakpoint-large-up {
+    font-size: 18px;
+	}
+	
+	@include breakpoint-xxlarge-up {
+    font-size: 20px;
+  }
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+	font-family: 'LouisGeorgeCafe', sans-serif;
+	font-weight: 300;
+	background-color: #6d7a14;
+	color:white;
+}
+
+h1 {
+	font-weight: 900;
+	padding: 1rem 0;
+	font-size: 3rem;
+	color: #6a0105;
+}
+
+.content-grid {
+	margin: 0 auto;
+	width: calc(100% - 5rem); // mobile
+
+	@include breakpoint-medium-up {
+		width: calc(100% - 5rem);
+	}
+
+	@include breakpoint-large-up {
+		width: calc(100% - 10rem);
+	}
+
+	@include breakpoint-xlarge-up {
+		width: calc(100% - 20rem);
+	}
+}
+
+::-webkit-scrollbar { 
+	display: none; 
+}
+
+a {
+	text-decoration: none;
+}
