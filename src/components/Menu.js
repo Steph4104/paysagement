@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 import PropTypes from 'prop-types';
 import { toElement as scrollToElement } from '@utils/scroll';
+import Logo from '../images/logo_paveunisousa.jpg';
 import '../styles/Menu.scss';
 
 class Menu extends Component {
@@ -49,8 +50,7 @@ class Menu extends Component {
       >
         <div className="menu">
           <div className="menu-item logo">
-          <img className="img-logo" src='https://via.placeholder.com/100'/>
-            Logo
+            <img className="img-logo" src={Logo}/>
           </div>
           <div
             className="menu-item active"
