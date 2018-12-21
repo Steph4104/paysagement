@@ -1,12 +1,13 @@
 {
-    "title": "description in one phrase",
-    "description": {
-      "longuer": "To get a longuer description."
-    },
     "lang":"fr",
     "menu":{
       "about":"About",
       "project": "Project",
       "contact":"Contact"
+    },
+    "home":{
+      "title":"Pave Uni Sousa",
+      "keywords":"Satisfaction - Aesthetics - Quality",
+      "description":"The landscaping of your dreams within reach of your hands"
     }
   }

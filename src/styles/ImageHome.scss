@@ -8,7 +8,7 @@
     font-size: 2.5rem;
   }
 
-  a {
+  img {
     padding: 0 0.625rem;
 
     &.devto svg {
@@ -25,7 +25,7 @@
   }
 
   &.animate-icons {
-    a {
+    img {
       display: inline-block;
       transform: perspective(1px) translateZ(0);
       box-shadow: 0 0 1px transparent;
@@ -54,5 +54,9 @@
     100% {
       transform: translateY(0px);
     }
+  }
+
+  .icon-size{
+    width:20%;
   }
 }

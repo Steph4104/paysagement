@@ -8,5 +8,10 @@
       "about":"À propos",
       "project": "Projet",
       "contact":"Contact"
+    },
+    "home":{
+      "title":"Pavé Uni Sousa",
+      "keywords":"Satisfaction - Esthétique - Qualité",
+      "description":"Le paysagement de vos rêves à la portée de vos mains"
     }
   }

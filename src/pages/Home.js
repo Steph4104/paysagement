@@ -15,10 +15,10 @@ render(){
       <main>
      
         <div className="intro-wrapper">
-          <div className="intro-name">Title here!</div>
+          <div className="intro-name">{t('home.title')}</div>
           <div className="tagline">
-          {t('title')}
-            <div>{t('description.longuer')}</div>
+          {t('home.keywords')}
+            <div>{t('home.description')}</div>
           </div>
           <ImageHome />
         </div>
