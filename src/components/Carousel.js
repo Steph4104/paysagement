@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Carousel.scss';
+
 class CarouselLeftArrow extends Component {
   render() {
     return (
@@ -59,12 +60,6 @@ class CarouselSlide extends Component {
         }
       >
         <p className="carousel-slide__photo">{this.props.slide.photo}</p>
-
-        <p>
-          <small className="carousel-slide__info">
-            {this.props.slide.info}
-          </small>
-        </p>
       </li>
     );
   }
