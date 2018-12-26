@@ -56,12 +56,16 @@ render(){
         <div className="project-wrapper">
                    <Carousel slides={carouselSlidesData} />
         </div>
-          <a className="more_link"href="#">More -></a>
+
+        <a className="more_link" href="#">
+          <span className="my-text">More </span>
+          <span className='fas fa-arrow-right my-icon'></span>
+        </a>
 
       </div> 
       <div className="align-scroll"> 
-      <ScrollNext pageSelector=".contact-page" />
-      <ScrollPrevious pageSelector=".about-page" />
+        <ScrollNext pageSelector=".contact-page" />
+        <ScrollPrevious pageSelector=".about-page" />
       </div>
     </div>
   );
