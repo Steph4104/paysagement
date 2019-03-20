@@ -48,35 +48,38 @@ class Menu extends Component {
           this.nav = elem;
         }}
       >
-        <div className="menu">
-          <div className="menu-item logo">
-            <img className="img-logo" src={Logo}/>
-          </div>
-          <div
+        <ul className="menu">
+          <li
             className="menu-item active"
             onClick={(e) => this.scrollToPage('.about-page')}
           >
            {t('menu.about')}
-          </div>
-          <div
+          </li>
+          <li
+            className="menu-item "
+            onClick={(e) => this.scrollToPage('.wedo-page')}
+          >
+           Our work
+          </li>
+          <li
             className="menu-item"
             onClick={(e) => this.scrollToPage('.project-page')}
           >
             {t('menu.project')}
-          </div>
-          <div
+          </li>
+          <li
             className="menu-item"
             onClick={(e) => this.scrollToPage('.contact-page')}
           >
             {t('menu.contact')}
-          </div>
-          <div
+          </li>
+          <li
             className="menu-item"
             onClick={() => i18n.changeLanguage(lang)}
           >
             {t('lang')}
-          </div>
-        </div>
+          </li>
+        </ul>
       </nav>
     );
   }

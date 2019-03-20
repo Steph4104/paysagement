@@ -59,14 +59,28 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 	font-family: 'LouisGeorgeCafe', sans-serif;
 	font-weight: 300;
-	background-color: #6d7a14;
-	color:white;
+	// background-color: #fff;
+	color: #6a0105;
 }
 
 h1 {
 	font-weight: 900;
 	padding: 1rem 0;
 	font-size: 3rem;
+	color: #6a0105;
+}
+
+h2 {
+	font-weight: 600;
+	padding: 2rem 0;
+	font-size: 2rem;
+	color: #6a0105;
+}
+
+h3 {
+	font-weight: 600;
+	padding: 2rem 0;
+	font-size: 2rem;
 	color: #6a0105;
 }
 

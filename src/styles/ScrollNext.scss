@@ -2,12 +2,13 @@
   cursor: pointer;
 
   .arrow {
-    text-align: center;
-    margin: 0 auto;
+    text-align: right;
+   // margin: 0 auto;
     padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
 
     .scroll-text {
-      text-align: center;
+      text-align: right;
       font-size: 0.5rem;
       margin-bottom: -0.125rem;
     }

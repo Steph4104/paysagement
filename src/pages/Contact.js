@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ScrollPrevious from '../components/ScrollPrevious';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
 
@@ -30,7 +29,7 @@ class Contact extends React.Component {
         <div className="contact-page">
                 <div className="content-grid">
 
-                    <h1>Contact us</h1>
+                <h2 align="center">Contact us</h2>
                   <div className='info-box'>
                     <div className="contact-info">
                     <p><i class="fab fa-font-awesome"></i>: 555-555-5555</p>
@@ -130,7 +129,6 @@ class Contact extends React.Component {
               </div>
 
           {this.state.showFormSuccess ? this._renderSuccessMessage() : null}
-          <ScrollPrevious pageSelector=".project-page" />
         </div>
       );
     }

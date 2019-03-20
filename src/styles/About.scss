@@ -1,8 +1,8 @@
 @import 'breakpoints';
 
 .about-page {
-  padding-top: 7rem;
-  min-height: 100vh;
+  padding-top: 5%;
+ // min-height: 100vh;
   display: flex;
 	flex: 0 1 auto;
 	flex-direction: column;
@@ -19,8 +19,13 @@
   .about-wrapper {
     
     .about-content {
+      // border: 3px solid blue;
+      // padding: 20px 40px 40px;
+      // max-width: 640px;
+      display: flex;
       font-size: 0.875rem;
       line-height: 1.5rem;
+      background-color: rgba(102, 1, 1, 0.048);
       
       @include breakpoint-small-down {
         font-size: 1rem;
@@ -28,19 +33,46 @@
 
       p {
         font-weight: 300;
-        padding: 0.5rem 0;
+        //padding: 0.5rem 0;
+      }
+      .img-content{
+        // width: 50%;
+        // float:left;
+        // margin: 20px 30px 0 0;
+        // width: 200px;
+        width:50%;
+        //object-fit: contain;
+        //align-self: flex-start;
+        img{
+          width:100%
+        }
+      }
+      .about-content{
+        text-align: center;
       }
     }
   }
 
   .box {
-    display: flex;
-    align-items:center;
+    //flex: 1 1 auto;
+    // display: flex;
+    //align-items:center;
+    width:50%;
     img{
-      width:25%;
+      width:50%;
     }
+
     p{
+      float:right;
       padding-left: 1rem !important ;
+    }
+  //   button{
+  //     clear:both;
+  //     display: flex;
+  // justify-content: center
+  //   }
+    .about-title{
+      text-align:center;
     }
   }
 }

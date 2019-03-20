@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 import ScrollNext from '../components/ScrollNext';
-import ScrollPrevious from '../components/ScrollPrevious';
 import Slide1 from '../images/carousel1.jpg';
 import Slide2 from '../images/carousel2.jpg';
 import Slide3 from '../images/carousel3.jpg';
@@ -52,21 +51,33 @@ render(){
   return (
     <div className="project-page">
       <div className="content-grid">
-        <h1>Project</h1>
+      <h2 align="center">Project</h2>
         <div className="project-wrapper">
-                   <Carousel slides={carouselSlidesData} />
+          <Carousel slides={carouselSlidesData} />
         </div>
-
+      <div className="wrap-bloc">
+        <div>
+          <div className="bloc1"><img src={Slide6}/> <p>blablabla1</p></div>
+          <div className="bloc2"><img src={Slide5}/><p>blablabla2</p></div>
+        </div>
+        <div>
+          <div className="bloc3"><img src={Slide1}/><p>blablabla3</p></div>
+          <div className="bloc4"><img src={Slide3}/><p>blablabla4</p></div>
+        </div>
+      </div>
         <a className="more_link" href="#">
           <span className="my-text">More </span>
           <span className='fas fa-arrow-right my-icon'></span>
         </a>
 
       </div> 
-      <div className="align-scroll"> 
+
+
+    
         <ScrollNext pageSelector=".contact-page" />
-        <ScrollPrevious pageSelector=".about-page" />
-      </div>
+      
+
+
     </div>
   );
 };
