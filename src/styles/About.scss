@@ -75,4 +75,21 @@
       text-align:center;
     }
   }
+  .contact-button{
+    background-color: white;
+    color: #6a0105;
+    border: 2px solid #6a0105;
+    padding: 15px 32px;
+    margin: 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+
+    &:hover {
+      background-color: #6a0105;
+      color: white;
+    }
+  }
 }

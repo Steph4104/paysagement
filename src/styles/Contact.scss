@@ -73,10 +73,9 @@
       outline: none !important;
       border: none;
       background: transparent;
-  }
-  
-  button:hover {
-      cursor: pointer;
+      &:hover {
+        cursor: pointer;
+    }
   }
   
   iframe {
@@ -92,7 +91,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 68px;
+    padding: 1%;
+    background-color: #f8f3f3;
   }
   
   .wrap-input {
@@ -108,8 +108,7 @@
   }
   
   .label-input {
-    font-size: 15px;
-    color: #dcdec4;
+    //font-size: 15px;
     line-height: 1.5;
     padding-left: 5px;
     padding-right: 10px;
@@ -120,7 +119,6 @@
     width: 100%;
     background: transparent;
     font-size: 18px;
-    color: #FFF;
     line-height: 1.2;
     padding: 0 5px;
   }
@@ -189,27 +187,24 @@
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    min-width: 160px;
-    height: 50px;
-    background-color: #6a0105;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #fff;
-    line-height: 1.2;
-  
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
+    background-color: white;
+    color: #6a0105;
+    border: 2px solid #6a0105;
+    padding: 15px 32px;
+    margin: 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 3px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+
+    &:hover {
+      background-color: #6a0105;
+      color: white;
+    }
   }
   
-  .contact-form-btn:hover {
-    background-color: #333333;
-  }
-  
+ 
   @include breakpoint-large-down {
     .wrap-contact {
       padding: 82px 80px 33px 80px;
@@ -316,19 +311,12 @@
   }
   .alert-success{
     background: rgba(106, 1, 5, 0.74);
-
-text-align: center;
-
-padding: 10px;
-
-top: 10%;
-
-position: absolute;
-
-margin: 5%;
-
-z-index: 1000;
-
-position: fixed;
+    text-align: center;
+    padding: 10px;
+    top: 10%;
+    position: absolute;
+    margin: 5%;
+    z-index: 1000;
+    position: fixed;
   }
 }

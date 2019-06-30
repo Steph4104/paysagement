@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 import ImageHome from '../components/ImageHome';
 import Menu from '../components/Menu';
-import ScrollNext from '../components/ScrollNext';
+// import ScrollNext from '../components/ScrollNext';
 import PaveBanner from "../images/pave_banner.jpg";
 
 
@@ -20,13 +20,13 @@ render(){
           <div className="tagline">
           {/* {t('home.keywords')}
             <div>{t('home.description')}</div> */}
-            <Menu />
+            {/* <Menu /> */}
           </div> 
           <img className="img-banner" src={PaveBanner}/>
           {/* <ImageHome /> */}
         </div>
       </main>
-      <ScrollNext pageSelector=".about-page" />
+      {/* <ScrollNext pageSelector=".about-page" /> */}
     </div>
   );
 };

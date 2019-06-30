@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
-import ScrollNext from '../components/ScrollNext';
+// import ScrollNext from '../components/ScrollNext';
 import Quality from '../images/quality_job.jpg';
 import Variety from '../images/variety_job.jpg';
 import Manege from '../images/manege_job.jpg';
@@ -26,7 +26,7 @@ render(){
           </div>
         </div>
       </div>
-      <ScrollNext pageSelector=".project-page" />
+      {/* <ScrollNext pageSelector=".project-page" /> */}
     </div>
   );
 };
