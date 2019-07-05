@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+
 class Form extends React.Component {
     state = {
       isValidated: false
@@ -67,18 +68,33 @@ class Form extends React.Component {
  
       axios({
           method: "POST", 
-          url:"http://192.168.2.37:3002/send", 
+          //url: `${process.env.REACT_APP_API}`,
+          url: 'http://paysagement.sclmedia.ca/api/contact/index.php',
+          headers: { "content-type": "application/json" },
           data: {
               name: name,   
               email: email,  
               message: message,
               phone: phone
           }
-      }).then((response)=>{
-          if (response.data.msg === 'success'){
-              this.resetForm()
-          }else if(response.data.msg === 'fail'){
-          }
+       })
+      //.then((response)=>{
+      //     if (response.data.sent === 'true'){
+      //       console.log(response)
+      //         this.resetForm()
+      //     }else if(response.data.msg === 'fail'){
+      //     }
+      // })
+      .then(result => {
+        if (result.data.sent) {
+          
+          mailSent: result.data.sent
+          console.log(result);
+          this.resetForm();
+          
+        } else {
+          console.log('no result');
+        }
       })
   }else{
       alert('no');

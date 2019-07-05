@@ -310,13 +310,15 @@
     color:red;
   }
   .alert-success{
-    background: rgba(106, 1, 5, 0.74);
+    background:rgba(54, 181, 24, 0.42);
     text-align: center;
     padding: 10px;
-    top: 10%;
+    top: 15%;
     position: absolute;
-    margin: 5%;
+    margin: 0 25% 0 25%;
     z-index: 1000;
     position: fixed;
+    width:50%;
+    color: #000;
   }
 }
