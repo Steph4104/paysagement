@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
-
+import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 import '../styles/Contact.scss';
 
 class Contact extends React.Component {
     state = {
       showFormSuccess: false
     };
-  
     submit = () => {
       
       this.setState({showFormSuccess: true});
@@ -17,28 +16,31 @@ class Contact extends React.Component {
     }
     
     _renderSuccessMessage() {
+      const { t, i18n } = this.props;  
       return (
         <div className={"alert alert-success mt-4"} role="alert">
-          Form was successfully validated and is ready to be submitted!
+          {t('contact.alert')}
         </div>
       );
     }
   
     render() {
+  const { t, i18n } = this.props;
+  
       return (
         <div className="contact-page">
                 <div className="content-grid">
 
-                <h2 align="center">Contact us</h2>
+                <h2 align="center">{t('contact.contact')}</h2>
                   <div className='info-box'>
                     <div className="contact-info">
-                    <p><i class="fab fa-font-awesome"></i>: 555-555-5555</p>
-                    <p><i class="fab fa-font-awesome"></i>: exemple@exemple.com</p>
+                    <p><i class="fab fa-font-awesome"></i>: 819-665-0684</p>
+                    <p><i class="fab fa-font-awesome"></i>: jessica.botelhosousa@hotmail.fr</p>
                     </div>
                     <div className="promo">
-                    <p>Free estimation!</p>
-                    <p>Residential and Commercial!</p>
-                    <p>Gatineau / Ottawa</p>
+                    <p>{t('contact.estimation')}</p>
+                    <p>{t('contact.rescom')}</p>
+                    <p>{t('contact.area')}</p>
                     </div>
                   </div>
                 <Form submit={this.submit}>
@@ -48,7 +50,7 @@ class Contact extends React.Component {
                       htmlFor={"Name"}
                       className={"label-input"}
                       >
-                      Name*
+                      {t('contact.name')}*
                     </label> 
                     <div className="invalid-feedback" />
                     <input
@@ -67,7 +69,7 @@ class Contact extends React.Component {
                       htmlFor={"Email"}
                       className={"label-input"}
                       >
-                      Email
+                      {t('contact.email')}
                     </label>
                     <div className="invalid-feedback" />
                     <input
@@ -84,7 +86,7 @@ class Contact extends React.Component {
                       htmlFor={"phone"}
                       className={"label-input"}
                       >
-                      phone*
+                      {t('contact.phone')}*
                     </label>
                     <div className="invalid-feedback" />
                     <input
@@ -102,7 +104,7 @@ class Contact extends React.Component {
                       htmlFor={"message"}
                       className={"label-input"}
                       >
-                      message*
+                      {t('contact.message')}*
                     </label>
                     <div className="invalid-feedback" />
                     <textarea
@@ -121,7 +123,7 @@ class Contact extends React.Component {
                         type={"submit"}
                         className={"contact-form-btn"}
                         >
-                       Submit!
+                        {t('contact.send')}
                       </button>
                     </div>
                     </div></div>
@@ -133,4 +135,4 @@ class Contact extends React.Component {
       );
     }
   }
-export default Contact;
+export default withNamespaces('translation')(Contact);

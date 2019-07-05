@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 
 
 class Form extends React.Component {
@@ -18,15 +19,16 @@ class Form extends React.Component {
   
           if (errorLabel && elem.nodeName.toLowerCase() !== "button") {
             if (!elem.validity.valid) {
+              const { t, i18n } = this.props;
                 switch(elem.id){
                     case 'name' :
-                        errorLabel.textContent = 'Error in the name';
+                        errorLabel.textContent = t('form.name');
                         break;
                     case 'phone' :
-                        errorLabel.textContent = 'Error in the Phone';
+                        errorLabel.textContent = t('form.phone');
                         break;
                     case 'message' :
-                        errorLabel.textContent = 'Error in the message';
+                        errorLabel.textContent = t('form.message');
                         break;
                 }
 
@@ -132,4 +134,4 @@ class Form extends React.Component {
       );
     }
   }
-  export default Form;  
+  export default withNamespaces('translation')(Form);  

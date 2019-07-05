@@ -2,6 +2,7 @@
     "lang":"fr",
     "menu":{
       "about":"About",
+      "services": "Services",
       "project": "Project",
       "contact":"Contact"
     },
@@ -11,12 +12,46 @@
       "description":"The landscaping of your dreams within reach of your hands"
     },
     "about":{
+      "about":"About",
+      "passion":"Landscaping, our passion",
       "text1":"Our mission is to help you improve the aesthetics of your land and meet your expectations. We are at your disposal to offer you a landscaping to your liking. Our services are varied, such as fence installation, pavers or plants. Our experienced staff will also be able to advise you on different development options.",
       "text2":"Our team also does business with carefully chosen companies to give you first class materials. Our priority is customer satisfaction and a job well done that you will not find anywhere else.",
-      "text3":"We accompany you throughout the process of the realization of your project. Our team will choose the material with you and help you find ideas for your landscaping with sketches. We can manage the entire project. You can count on our presence at every stage of your project down to the smallest detail."
+      "text3":"We accompany you throughout the process of the realization of your project. Our team will choose the material with you and help you find ideas for your landscaping with sketches. We can manage the entire project. You can count on our presence at every stage of your project down to the smallest detail.",
+      "contact":"Make an appointment"
+    },
+    "service":{
+      "services":"Services",
+      "pavement":"Pavement",
+      "prep":"Preparation",
+      "ent":"Maintenance",
+      "aces":"Accessories",
+      "plant":"Plants",
+      "desc":{
+        "pavement":"Our specialty is the pavement. We mainly offer curbs, stairs, sidewalks, balcony overlays, walls, parking lots and more.",
+        "prep":"With our years of experience, we know that it is essential to prepare the ground well with excavation, foundation insulation and installation of drains. We also apply a polymer and seal as needed to make the installation durable.",
+        "aces":"The details are what brings the most cachet to an exterior landscaping. We can build a shed, a fence, a pergola or a terrace in trex and install lighting or peat.",
+        "plant":"There is nothing better to finalize a project than beautiful plants filled with colors and a new green and fresh turf. This is often what gives the last touch that turns heads."
+      }
     },
     "project":{
-      "info_entrance":"Entrance",
-      "info_sidewalk":"Sidewalk"
+      "project":"Project",
+      "more":"More"
+    },
+    "contact":{
+      "contact":"Contact us",
+      "estimation":"Free estimation",
+      "rescom":"Residential and Commercial",
+      "area":"Gatineau / Ottawa",
+      "name":"Name",
+      "email":"Email",
+      "phone":"Phone",
+      "message":"Message",
+      "send":"Send",
+      "alert":"Thanks for contacting us!"
+    },
+    "form":{
+      "name":"Error in the name",
+      "phone":"Error in the Phone",
+      "message":"Error in the message"
     }
   }

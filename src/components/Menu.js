@@ -59,7 +59,7 @@ class Menu extends Component {
             className="menu-item "
             onClick={(e) => this.scrollToPage('.wedo-page')}
           >
-           Our work
+          {t('menu.services')}
           </li>
           <li
             className="menu-item"

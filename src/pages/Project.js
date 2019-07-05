@@ -51,7 +51,7 @@ render(){
   return (
     <div className="project-page">
       <div className="content-grid">
-      <h2 align="center">Project</h2>
+      <h2 align="center">{t('project.project')}</h2>
         <div className="project-wrapper">
           <Carousel slides={carouselSlidesData} />
         </div>
@@ -67,7 +67,7 @@ render(){
       </div>
       <div className="box-more">
         <a className="more_link" href="#">
-          <span className="my-text">More </span>
+          <span className="my-text">{t('project.more')}</span>
           <span className='fas fa-arrow-right my-icon'></span>
         </a>
 </div>
