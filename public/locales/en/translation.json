@@ -35,6 +35,10 @@
     },
     "project":{
       "project":"Project",
+      "imgpark":"Parking",
+      "imglvl":"Level",
+      "imgstair":"Stair",
+      "imgpool":"Pool",
       "more":"More"
     },
     "contact":{

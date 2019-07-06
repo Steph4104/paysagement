@@ -35,6 +35,10 @@
     },
     "project":{
       "project":"Réalisations",
+      "imgpark":"Entrée",
+      "imglvl":"Palier",
+      "imgstair":"Escalier",
+      "imgpool":"Piscine",
       "more":"Plus"
     },
     "contact":{
