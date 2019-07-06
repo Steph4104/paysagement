@@ -3,7 +3,7 @@ import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 import ImageHome from '../components/ImageHome';
 import Menu from '../components/Menu';
 // import ScrollNext from '../components/ScrollNext';
-import PaveBanner from "../images/pave_banner.jpg";
+import PaveBanner from "../images/pave_banner_logo.jpg";
 
 
 import '../styles/Home.scss';
@@ -18,11 +18,15 @@ render(){
         <div className="intro-wrapper">
           <div className="intro-name">{t('home.title')}</div>
           <div className="tagline">
-          {/* {t('home.keywords')}
-            <div>{t('home.description')}</div> */}
+        
             {/* <Menu /> */}
-          </div> 
+           
           <img className="img-banner" src={PaveBanner}/>
+          <div className="textImg">
+             {t('home.keywords')}
+             <br/>
+            {t('home.description')}</div>
+          </div>
           {/* <ImageHome /> */}
         </div>
       </main>

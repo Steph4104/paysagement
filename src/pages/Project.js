@@ -57,12 +57,12 @@ render(){
         </div>
       <div className="wrap-bloc">
         <div>
-          <div className="bloc1"><img src={Slide6}/></div>
-          <div className="bloc2"><img src={Slide5}/></div>
+          <div className="bloc1"><img src={Slide6}/><p>Stationnement</p></div>
+          <div className="bloc2"><img src={Slide5}/><p>Entrée</p></div>
         </div>
         <div>
-          <div className="bloc3"><img src={Slide1}/></div>
-          <div className="bloc4"><img src={Slide3}/></div>
+          <div className="bloc3"><img src={Slide1}/><p>Escalier</p></div>
+          <div className="bloc4"><img src={Slide3}/><p>Piscine</p></div>
         </div>
       </div>
       <div className="box-more">

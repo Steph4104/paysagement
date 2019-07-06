@@ -23,29 +23,68 @@
 
     .bloc1{
       float:left;
+      position: relative;
+      text-align: center;
       img{
         width: 86%;
         margin: 4% 10% 0 10%
       }
+      p{
+        position: absolute;
+        bottom: 3%;
+        right: 6%;
+        padding: 3% 10%;
+        background-color: rgba(102, 1, 1, 0.49);
+        color:white;
+      }
     }
     .bloc2{
+      position: relative;
+      text-align: center;
      img{
        width:86%;
        margin: 10% 10% 4% 10%;
      }
-      
+     p{
+      position: absolute;
+      bottom: 4%;
+      right: 6%;
+      padding: 3% 10%;
+      background-color: rgba(102, 1, 1, 0.49);
+      color:white;
+    }
     }
     .bloc3{
       float:left;
+      position: relative;
+      text-align: center;
       img{
         width:86%;
         margin: 4% 10% 0 10%
       }
+      p{
+        position: absolute;
+        bottom: 3%;
+        right: 6%;
+        padding: 3% 10%;
+        background-color: rgba(102, 1, 1, 0.49);
+        color:white;
+      }
     }
     .bloc4{
+      position: relative;
+      text-align: center;
       img{
         width:86%;
         margin: 10% 10% 4% 10%;
+      }
+      p{
+        position: absolute;
+        bottom: 4%;
+        right: 6%;
+        padding: 3% 10%;
+        background-color: rgba(102, 1, 1, 0.49);
+        color:white;
       }
     }
   }
