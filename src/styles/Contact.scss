@@ -202,6 +202,10 @@
       background-color: #6a0105;
       color: white;
     }
+    @include breakpoint-small-down {
+      width: 100%;
+      margin: 0 0 25px 50%;
+    }
   }
   
  
@@ -220,6 +224,12 @@
   @include breakpoint-small-down {
     .wrap-contact {
       padding: 82px 15px 33px 15px;
+    }
+    .contact-page, .info-box{
+ display:block;
+    }
+    .contact-page, .contact-info{
+     width:0;
     }
   }
   
@@ -289,10 +299,16 @@
     width:100%;
     padding-bottom: 5%;
     display:flex;
+    @include breakpoint-small-down {
+      display: block;
+    }
   }
 
   .contact-info{
       width:50%;
+      @include breakpoint-small-down {
+        width: 100%;
+      }
   }
 
   .promo{

@@ -28,6 +28,7 @@
       
       @include breakpoint-small-down {
         font-size: 1rem;
+        display:block;
       }
 
       p {
@@ -45,8 +46,11 @@
         object-fit: contain;
         background: rgba(102, 1, 1, 0.048);
         align-self: flex-start; 
+        @include breakpoint-small-down {
+          width:100%;
+        }
         .img1{
-            width:50%;
+            width:100%;
         }
       }
       .wedo-content{

@@ -10,6 +10,7 @@
   
   @include breakpoint-small-down {
     padding-top: 3rem;
+    min-height: 0;
   }
 
   .content-grid {
@@ -19,6 +20,9 @@
       display: flex;
       text-align: center;
       background: rgba(102, 1, 1, 0.048);
+      @include breakpoint-small-down {
+        display:none;
+      }
     }
 
     .bloc1{

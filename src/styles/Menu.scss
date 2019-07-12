@@ -1,8 +1,8 @@
 @import 'breakpoints';
 
 nav {
-  position: absolute;
-  // top: 2rem;
+ position: absolute;
+ // top: 2rem;
   padding-top: 10px;  
   width: 100%;
   margin:0 auto;
@@ -15,42 +15,178 @@ nav {
     height: 4rem;
   }
   
-  .menu {
-    //margin-right: 1rem;
-    //display: -webkit-inline-box;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    display: flex;
-    background-color: #fff;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    z-index:1;
+//   .menu {
+//     //margin-right: 1rem;
+//     //display: -webkit-inline-box;
+//     position: fixed; /* Set the navbar to fixed position */
+//     top: 0; /* Position the navbar at the top of the page */
+//     width: 100%; /* Full width */
+//     display: flex;
+//     background-color: #fff;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 15px;
+//     z-index:1;
     
-    &-item {
-      padding: 0 1rem;
-      font-size: 1.25rem;
-      font-weight: 400;
-      border-bottom: 2px solid transparent;
-      &:hover{
-        cursor: pointer;
-        color:#6a0105;
-      }
-      &:active{
-        cursor: pointer;
-        color:#6a0105;
-      }
-    }
-  }
-}
+//     &-item {
+//       padding: 0 1rem;
+//       font-size: 1.25rem;
+//       font-weight: 400;
+//       border-bottom: 2px solid transparent;
+//       &:hover{
+//         cursor: pointer;
+//         color:#6a0105;
+//       }
+//       &:active{
+//         cursor: pointer;
+//         color:#6a0105;
+//       }
+//     }
+//   }
+ }
 
 .logo{
   flex: 1 1;
 }
-.img-banner{
-  //vertical-align: text-top;
-  max-width: 65%;
-  margin: auto;
-  padding-top:50px;
+// .img-banner{
+//   //vertical-align: text-top;
+//   max-width: 65%;
+//   margin: auto;
+//   padding-top:50px;
+// }
+
+/* header */
+
+nav {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+nav li {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+nav li:hover,
+nav .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+nav .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  align-items: center;
+  justify-content: center;
+  //display:flex;
+  text-align: center;
+}
+
+/* menu icon */
+
+nav .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 18px 20px;
+  position: relative;
+  user-select: none;
+}
+
+nav .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+nav .menu-icon .navicon:before {
+  top: 5px;
+}
+
+nav .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+nav .menu-btn {
+  display: none;
+}
+
+nav .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  nav li {
+    float: left;
+  }
+  nav li a {
+    padding: 20px 30px;
+  }
+  nav .menu {
+    clear: none;
+   // float: right;
+    max-height: none;
+    display:flex;
+  }
+  nav .menu-icon {
+    display: none;
+  }
 }

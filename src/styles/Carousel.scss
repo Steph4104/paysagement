@@ -1,6 +1,6 @@
 // SASS variable for media query breakpoint
 $breakpoint-desktop: 992px;
-
+@import 'breakpoints';
 // Resetting default styles
 ul {
   padding: 0;
@@ -21,6 +21,9 @@ ul {
 
   img{
     max-width:700px;
+    @include breakpoint-small-down {
+      width:100%;
+    }
   }
 }
 
@@ -36,6 +39,10 @@ ul {
   @media (max-width: 991px) {
     padding-right: 60px;
     padding-left: 60px;
+  }
+  @include breakpoint-small-down {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   &--active {
