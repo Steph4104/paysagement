@@ -92,13 +92,13 @@ h3 {
 		width: calc(100% - 5rem);
 	}
 
-	@include breakpoint-large-up {
-		width: calc(100% - 10rem);
-	}
+	// @include breakpoint-large-up {
+	// 	width: calc(100% - 10rem);
+	// }
 
-	@include breakpoint-xlarge-up {
-		width: calc(100% - 20rem);
-	}
+	// @include breakpoint-xlarge-up {
+	// 	width: calc(100% - 20rem);
+	// }
 }
 
 ::-webkit-scrollbar { 

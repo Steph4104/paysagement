@@ -2,7 +2,7 @@
 
 .contact-page {
   padding-top: 2rem;
-  min-height: 100vh;
+  //min-height: 100vh;
   display: flex;
 	flex: 0 1 auto;
 	flex-direction: column;
@@ -18,6 +18,9 @@
     margin:auto;
     @include breakpoint-small-down {
       width:80%;
+    }
+    @include breakpoint-xlarge-down {
+      width:90%;
     }
   }
 
@@ -107,6 +110,9 @@
     @include breakpoint-small-down {
      margin-bottom: 5%;
     }
+    @include breakpoint-medium-down {
+      margin-bottom: 5%;
+     }
   }
   
   .rs1-wrap-input {
@@ -214,6 +220,13 @@
       margin-top:20%;
       display: block;
     }
+
+    @include breakpoint-xlarge-down {
+      
+      margin: 0 0 25px 40%;
+      margin-top:0;
+      display: block;
+    }
   }
   
  
@@ -230,6 +243,21 @@
   }
   
   @include breakpoint-small-down {
+    .wrap-contact {
+      padding: 82px 15px 33px 15px;
+    }
+    .contact-page, .info-box{
+ display:block;
+    }
+    .contact-page, .contact-info{
+     width:0;
+    }
+    .contact-form .justify-content-md-center{
+      width:100%;
+    }
+  }
+
+  @include breakpoint-xlarge-down {
     .wrap-contact {
       padding: 82px 15px 33px 15px;
     }
@@ -313,11 +341,18 @@
     @include breakpoint-small-down {
       display: block;
     }
+    @include breakpoint-xlarge-down {
+      display: block;
+    }
   }
 
   .contact-info{
       width:50%;
       @include breakpoint-small-down {
+        width: 100%;
+      }
+
+      @include breakpoint-xlarge-down {
         width: 100%;
       }
   }

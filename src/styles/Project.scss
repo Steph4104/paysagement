@@ -2,7 +2,7 @@
 
 .project-page {
   padding-top: 7rem;
-  min-height: 100vh;
+  //min-height: 100vh;
   display: flex;
 	flex: 0 1 auto;
 	flex-direction: column;
@@ -13,6 +13,10 @@
     min-height: 0;
   }
 
+  @include breakpoint-medium-down {
+    padding-top: 3rem;
+    min-height: 0;
+  }
   .content-grid {
     flex: auto;
 
@@ -21,6 +25,10 @@
       text-align: center;
       background: rgba(102, 1, 1, 0.048);
       @include breakpoint-small-down {
+        display:none;
+      }
+
+      @include breakpoint-xlarge-down {
         display:none;
       }
     }
@@ -103,6 +111,14 @@
     @include breakpoint-small-down {
       flex-direction: column;
       align-items: center;
+    }
+
+    @include breakpoint-xlarge-down {
+      flex-direction: column;
+      align-items: center;
+      float:none;
+      // flex-wrap: initial;
+      // float: none;
     }
   }
   .box-more{

@@ -26,9 +26,15 @@
       font-size: 0.875rem;
       line-height: 1.5rem;
       
-      @include breakpoint-small-down {
+      @include breakpoint-small-down{
         font-size: 1rem;
         display:block;
+      }
+
+      @include breakpoint-xlarge-down{
+        font-size: 1rem;
+        flex-wrap: wrap;
+        flex-direction: row;
       }
 
       p {
@@ -48,6 +54,10 @@
         align-self: flex-start; 
         @include breakpoint-small-down {
           width:100%;
+        }
+
+        @include  breakpoint-xlarge-down {
+          flex-basis: calc(50% - 25px); 
         }
         .img1{
             width:100%;

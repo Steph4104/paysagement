@@ -24,6 +24,10 @@ ul {
     @include breakpoint-small-down {
       width:100%;
     }
+
+    @include breakpoint-xlarge-down {
+      width:100%;
+    }
   }
 }
 
@@ -41,6 +45,11 @@ ul {
     padding-left: 60px;
   }
   @include breakpoint-small-down {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @include breakpoint-xlarge-down {
     padding-right: 0;
     padding-left: 0;
   }
@@ -133,4 +142,8 @@ ul {
       opacity: .75;
     }
   }
+}
+
+.content-grid p {
+  margin-top: 0;
 }

@@ -31,6 +31,11 @@
         font-size: 1rem;
       }
 
+      @include breakpoint-xlarge-down {
+        line-height: 2rem;
+      }
+      
+
       p {
         font-weight: 300;
         //padding: 0.5rem 0;
@@ -48,9 +53,14 @@
           width:0%;
           display:none;
         }
+
+        @include breakpoint-xlarge-down {
+          width:0%;
+          display:none;
+        }
         img{
           width:100%;
-          position: absolute;
+          position: relative;
           top: 50%;
           transform: translateY(-50%);
           left: 1%;
@@ -68,6 +78,10 @@
     //align-items:center;
     width:50%;
     @include breakpoint-small-down {
+      width: 100%;
+    }
+
+    @include breakpoint-xlarge-down {
       width: 100%;
     }
     img{
