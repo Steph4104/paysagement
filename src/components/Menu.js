@@ -6,33 +6,33 @@ import Logo from '../images/logo_paveunisousa.jpg';
 import '../styles/Menu.scss';
 
 class Menu extends Component {
-  constructor(props) {
-    super(props);
-    this.handleScroll = this.handleScroll.bind(this);
-    this.state = {
-      isSticky: false
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.handleScroll = this.handleScroll.bind(this);
+  //   this.state = {
+  //     isSticky: false
+  //   };
+  // }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
+  // componentDidMount() {
+  //   window.addEventListener('scroll', this.handleScroll);
+  // }
 
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  }
+  // componentWillUnmount() {
+  //   window.removeEventListener('scroll', this.handleScroll);
+  // }
 
-  handleScroll() {
-    if (window.pageYOffset > this.nav.offsetTop) {
-      this.setState({
-        isSticky: true
-      });
-    } else {
-      this.setState({
-        isSticky: false
-      });
-    }
-  }
+  // handleScroll() {
+  //   if (window.pageYOffset > this.nav.offsetTop) {
+  //     this.setState({
+  //       isSticky: true
+  //     });
+  //   } else {
+  //     this.setState({
+  //       isSticky: false
+  //     });
+  //   }
+  // }
 
   scrollToPage(pageSelector) {
     const nextPage = document.querySelector(pageSelector);
@@ -56,9 +56,9 @@ class Menu extends Component {
       </ul>
     </header> */}
       <nav
-        ref={(elem) => {
-          this.nav = elem;
-        }}
+        // ref={(elem) => {
+        //   this.nav = elem;
+        // }}
       >
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>

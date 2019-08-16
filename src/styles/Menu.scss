@@ -78,6 +78,7 @@ nav li {
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  background-color: #fff;
 }
 
 nav li:hover,
@@ -151,7 +152,8 @@ nav .menu-btn {
 }
 
 nav .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  //max-height: 240px;
+  overflow: visible;
 }
 
 nav .menu-btn:checked ~ .menu-icon .navicon {
